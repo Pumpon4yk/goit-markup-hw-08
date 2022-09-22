@@ -1,0 +1,36 @@
+// 
+@import 'utils/variables';
+@import 'base/normalize';
+@import 'utils/vh.scss';
+@import 'base/general-styles';
+
+// Components
+@import 'components/logo';
+@import 'components/social-list';
+@import 'components/button';
+@import 'components/button';
+@import 'components/modal';
+@import 'components/form';
+
+// Header
+@import 'layout/header/header';
+@import 'layout/header/nav';
+@import 'layout/header/contact';
+
+
+// Footer
+@import 'layout/footer/footer';
+@import 'layout/footer/address';
+@import 'layout/footer/social-list-footer';
+@import 'layout/footer/form-footer';
+
+// Geleram Page
+@import 'pages/general-page/hero';
+@import 'pages/general-page/skills';
+@import 'pages/general-page/activity';
+@import 'pages/general-page/teams';
+@import 'pages/general-page/customers';
+
+// Portfolio Page
+@import 'pages/portfolio/filter';
+@import 'pages/portfolio/card-set';

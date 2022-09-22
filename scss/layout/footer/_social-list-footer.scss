@@ -1,0 +1,23 @@
+.social__group {
+    margin-left: 70px;
+}
+
+.social__titel{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $white-color;
+}
+
+.social--retreat{
+    align-content: center;
+    margin-top: 20px;
+}
+
+.footer__social{
+    background-color: $bg-cl-icon-footer;
+    &:hover, &:focus {
+        background-color: $blue-color;
+    }
+}

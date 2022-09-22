@@ -1,0 +1,63 @@
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+
+    background-color: $bg-modal;
+    opacity: 1;
+
+    transition: opacity $anim-time $animation-timing-function,
+    visibility $anim-time $animation-timing-function;
+}
+
+.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal__window{
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    left: 50%;
+    top: 50%;
+    padding: 40px;
+    
+
+    background: $white-color;
+    box-shadow: $border-shadow;
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: transform $anim-time $animation-timing-function;
+    
+}
+
+.modal__btn-x{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+
+    padding: 9px;
+
+    background-color: $white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    transition: fill $anim-time $animation-timing-function;
+}
+
+.modal__icon-x{
+    display: block;
+
+    transition: fill $anim-time $animation-timing-function;
+
+    .modal__btn-x:hover &, .modal__btn-x:focus &{
+        fill: $blue-color;
+    }
+}

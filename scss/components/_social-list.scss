@@ -1,0 +1,27 @@
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $cl-icon;
+    background-color: $white-color;
+
+    transition: background-color $anim-time $animation-timing-function, 
+    color $anim-time $animation-timing-function;
+    &:hover, &:focus{
+        color: $white-color;
+        background-color: $blue-color;
+    }
+}
+
+.social__icon{
+    fill: currentColor;
+}

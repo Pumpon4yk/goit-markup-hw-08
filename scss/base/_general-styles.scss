@@ -1,0 +1,36 @@
+.body {
+    background-color: $white-color;
+    font-family: $main-font;
+    color: $black-color;
+    font-size: $font-size-main;
+    letter-spacing: $let-spacing-main;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+button {
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    font-family: $main-font;
+    border: none;
+    border-radius: 4px;
+}
+
+.titel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.13;
+    text-align: center;
+
+    margin-bottom: 50px;
+    }

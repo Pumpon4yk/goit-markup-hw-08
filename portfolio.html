@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body class="body">
+    <!-- Шапка -->
+    <header class="header">
+      <div class="container">
+        <!-- Меню -->
+        <nav class="nav">
+          <a class="logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--curent" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Контакти -->
+        <div class="contacts">
+          <a class="contact__link" href="mailto:info@devstudio.com">
+            <svg class="contact__icon" width="16" height="12">
+              <use href="./images/icons.svg#mail"></use>
+            </svg>
+            info@devstudio.com</a>
+          <a class="contact__link" href="tel:+380961111111">
+            <svg class="contact__icon" width="10" height="16">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </div>
+      </div>
+    </header>
+    <!-- Головний контент -->
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <!-- Фільтер -->
+          <ul class="filter">
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Усі</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Додатки</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Сітка -->
+          <ul class="card-set">
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img1.jpg" alt="Технокряк" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Технокряк</h2>
+                  <p class="card-set__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card-set__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img3.jpg" alt="Ресторан Seafood" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Ресторан Seafood</h2>
+                  <p class="card-set__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img4.jpg" alt="Проєкт Prime" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Проєкт Prime</h2>
+                  <p class="card-set__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img5.jpg" alt="Проєкт Boxes" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Проєкт Boxes</h2>
+                  <p class="card-set__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img6.jpg" alt="Inspiration has no Borders" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Inspiration has no Borders</h2>
+                  <p class="card-set__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img7.jpg" alt="Видання Limited Edition" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Видання Limited Edition</h2>
+                  <p class="card-set__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img8.jpg" alt="Проєкт LAB" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Проєкт LAB</h2>
+                  <p class="card-set__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-set__item">
+              <a class="card-set__card" href="">
+                <div class="card-set__group-img">
+                  <img class="card-set__img" src="./images/studia/img9.jpg" alt="Growing Business" width="370" height="294" />
+                  <div class="card-set__overlay">
+                    <p class="card-set__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
+                      про компанію чи приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Growing Business</h2>
+                  <p class="card-set__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Підвал -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="address__group">
+          <a class="logo footer__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+          <!-- Адрес -->
+          <address class="address">
+            <ul class="address__list ">
+              <li class="address__item">
+                <a class="address__link" href="https://goo.gl/maps/W9zQZF4o8ZQ2FMWs7" target="_blank" rel="noopener noreferrer">
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="address__item">
+                <a class="address__link address__link--color" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address__item">
+                <a class="address__link address__link--color" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social__group">
+          <p class="social__titel">Приєднуйтесь</p>
+          <ul class="social social--retreat">
+            <li class="social__item">
+              <a href="" class="social__link footer__social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <svg class="social__icon footer__icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link footer__social" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                <svg class="social__icon footer__icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link footer__social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg class="social__icon footer__icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link footer__social" aria-label="Linkedin" target="_blank" rel="noopener noreferrer">
+                <svg class="social__icon footer__icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Форма -->
+        <div class="send">
+          <p class="send__titel">Підпишіться на розсилку</p>
+          <form class="send__form">
+            <label class="send_label">
+              <input class="send__input" type="email" name="email" placeholder="E-mail" required/>
+            </label>
+            <button class="send__btn btn" type="submit">
+              Підписатися
+              <svg class="send__icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
