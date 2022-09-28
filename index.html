@@ -26,35 +26,60 @@
     <header class="header">
       <div class="container">
         <!-- Меню -->
-        <nav class="nav">
-          <a class="logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--curent" href="./index.html">Студія</a>
+        <a class="logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+        <div class="menu js-menu-container" >
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--curent" href="./index.html">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Контакти -->
+          <div class="contacts">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </div>
+          <ul class="menu__social">
+            <li class="menu__social-item">
+              <a class="menu__social-link" href="">Instagram</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+            <li class="menu__social-item">
+              <a class="menu__social-link" href="">Twitter</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакти</a>
+            <li class="menu__social-item">
+              <a class="menu__social-link" href="">Facebook</a>
+            </li>
+            <li class="menu__social-item">
+              <a class="menu__social-link" href="">LinkedIn</a>
             </li>
           </ul>
-        </nav>
-        <!-- Контакти -->
-        <div class="contacts">
-          <a class="contact__link" href="mailto:info@devstudio.com">
-            <svg class="contact__icon" width="16" height="12">
-              <use href="./images/icons.svg#mail"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-          <a class="contact__link" href="tel:+380961111111">
-            <svg class="contact__icon" width="10" height="16">
-              <use href="./images/icons.svg#phone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
         </div>
+        <button class="menu__button js-open-menu" type="button" 
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
+          <svg class="menu_icon" width="24" height="19">
+            <use class="menu__icon-burger" href="./images/icons.svg#burger"></use>
+            <use class="menu__icon-x" href="./images/icons.svg#x"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Головний контент -->
@@ -70,7 +95,7 @@
       <section class="skills section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-          <ul class="skills__list list">
+          <ul class="skills__list">
             <li class="skills__item">
               <div class="skills__icon">
                 <svg width="70" height="70">
@@ -149,11 +174,13 @@
           <h2 class="titel">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
+                <img
+                srcset="./images/main/mobi/1x/igor.jpg 1x,
+                ./images/main/mobi/2x/igor@2x.jpg 2x"
+                src="./images/main/mobi/1x/igor.jpg"
                 class="team__img"
-                src="./images/main/card1.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
+                width="480"
               />
               <div class="team__date">
                 <h3 class="team__employee">Ігор Дем'яненко</h3>
@@ -215,7 +242,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/main/card2.jpg" alt="Ольга Рєпіна" width="270" />
+              <img class="team__img" 
+              srcset="./images/main/mobi/1x/olga.jpg 1x,
+              ./images/main/mobi/2x/olga@2x.jpg 2x"
+              src="./images/main/mobi/1x/olga.jpg" 
+              alt="Ольга Рєпіна"
+              width="480" />
               <div class="team__date">
                 <h3 class="team__employee">Ольга Рєпіна</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -278,9 +310,11 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/main/card3.jpg"
+                srcset="./images/main/mobi/1x/mykola.jpg 1x,
+                ./images/main/mobi/2x/mykola@2x.jpg 2x"
+                src="./images/main/mobi/1x/mykola.jpg"
                 alt="Микола Тарасов"
-                width="270"
+                width="480"
               />
               <div class="team__date">
                 <h3 class="team__employee">Микола Тарасов</h3>
@@ -344,9 +378,11 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/main/card4.jpg"
+                srcset="./images/main/mobi/1x/miha.jpg 1x,
+                ./images/main/mobi/2x/miha@2x.jpg 2x"
+                src="./images/main/mobi/1x/miha.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
+                width="480"
               />
               <div class="team__date">
                 <h3 class="team__employee">Михайло Єрмаков</h3>
@@ -591,7 +627,7 @@
         <div class="send">
           <p class="send__titel">Підпишіться на розсилку</p>
           <form class="send__form">
-            <label class="send_label">
+            <label class="send__label">
               <input class="send__input" type="email" name="email" placeholder="E-mail" required />
             </label>
             <button class="send__btn btn" type="submit">
@@ -664,5 +700,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

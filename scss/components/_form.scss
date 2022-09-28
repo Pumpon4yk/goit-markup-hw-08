@@ -8,8 +8,13 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+        
+    }
 }
 
 .form__field{
@@ -146,7 +151,7 @@
 }
 
 .form__policy-text{
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     color: $grey-color;
 

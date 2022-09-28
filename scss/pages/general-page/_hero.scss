@@ -1,26 +1,79 @@
 .hero {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 100%;
     padding: 200px 0;
     margin: 0 auto;
     background-image: linear-gradient(to right, 
     $background-hero, 
     $background-hero), 
-    url('../images/main/hero.jpg');
+    url('../images/main/mobi/1x/hero-mobi.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: 
+    linear-gradient(to right, 
+    $background-hero, 
+    $background-hero),url('../images/main/mobi/2x/hero-mobi@2x.jpg');
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        background-image: linear-gradient(to right, 
+        $background-hero, 
+        $background-hero), 
+        url('../images/main/tablet/1x/hero-tab.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(to right, 
+        $background-hero, 
+        $background-hero),url('../images/main/tablet/2x/hero-tab@2x.jpg');
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        background-image: linear-gradient(to right, 
+        $background-hero, 
+        $background-hero), 
+        url('../images/main/desktop/1x/hero-desk.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(to right, 
+        $background-hero, 
+        $background-hero),url('../images/main/desktop/2x/hero-desk@2x.jpg');
+        }
+    }
+
     &__titel{
+    margin: 0 auto 30px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white-color;
+
+    @media screen and (min-width: 1200px) {
         width: 696px;
-        margin: 0 auto 30px;
-    
-        font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        letter-spacing: 0.06em;
-        color: $white-color;
-        text-transform: uppercase;
-    }
+        }
+    }  
 }
+
+
+
+

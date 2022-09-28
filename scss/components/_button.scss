@@ -1,5 +1,5 @@
 .btn {
-    padding: 10px 32px;
+    padding: 10px 24px;
     margin: 0 auto;
 
     background-color: $blue-color;
@@ -19,4 +19,11 @@
     &:hover, &:focus{
         background-color: $blue-second;
     }
+
+    @media  screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
 }
+
+
+//     padding: 10px 32px;

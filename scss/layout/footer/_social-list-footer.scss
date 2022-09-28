@@ -1,5 +1,23 @@
+.social--retreat{
+    align-content: center;
+    margin-top: 20px;
+
+}
+
 .social__group {
-    margin-left: 70px;
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+    
 }
 
 .social__titel{
@@ -10,10 +28,6 @@
     color: $white-color;
 }
 
-.social--retreat{
-    align-content: center;
-    margin-top: 20px;
-}
 
 .footer__social{
     background-color: $bg-cl-icon-footer;

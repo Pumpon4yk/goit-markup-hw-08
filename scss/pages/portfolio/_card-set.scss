@@ -1,11 +1,25 @@
 .card-set{
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+        
+    }
 }
 
 .card-set__item {
-    width: 370px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+
+    }
 }
 
 .card-set__card {
