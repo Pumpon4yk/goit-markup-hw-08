@@ -11,6 +11,10 @@
 }
 
 .card-set__item {
+    height: 100%;
+    @media screen and (min-width: 480px){
+        height: 404px;
+    }
 
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px) / 2);
@@ -18,13 +22,18 @@
 
     @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 60px) / 3);
+        height: 404px;
+    }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        &:nth-child(-n + 2){
+            height: 440px;
+        }
     }
 }
 
 .card-set__card {
     display: block;
-
     transition: box-shadow $anim-time $animation-timing-function;
 
     &:hover, &:focus{
@@ -51,7 +60,6 @@
     opacity: 0;
     background-color: $bg-over;
     
-    
     transform: translateY(100%);
     
     transition: transform $anim-time $animation-timing-function,
@@ -68,6 +76,12 @@
     padding: 20px 24px;
     border: 1px solid $frame-cards;
     border-top: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        &--padding{
+            padding-bottom: 56px;
+        }
+    }
 }
 
 .card-set__title {

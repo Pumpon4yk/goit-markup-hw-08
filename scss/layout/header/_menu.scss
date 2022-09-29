@@ -1,16 +1,18 @@
 .menu{
     z-index: 5;
     @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        max-width: 480px;
-        position: absolute;
+        height: 100%;
+        position: fixed;
         left: 0;
         top: 0;
         padding: 48px 40px;
         background-color: $white-color;
         opacity: 0;
         
-        transform: translateX(-100%);
+        transform: translateX(100%);
 
         transition: transform $anim-time $animation-timing-function,
         opacity $anim-time $animation-timing-function;
