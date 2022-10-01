@@ -1399,12 +1399,12 @@ button {
 @media screen and (min-width: 360px) {
   .card-set__overlay {
     padding: 50px 24px;
-    font-size: 18px;
   }
 }
 @media screen and (min-width: 450px) {
   .card-set__overlay {
     padding: 77px 24px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 768px) {
