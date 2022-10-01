@@ -44,8 +44,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
 
-    padding: 63px 24px;
+    font-size: 14px;
+    
+    padding: 35px 24px;
     opacity: 0;
     background-color: $bg-over;
     
@@ -53,11 +56,33 @@
     
     transition: transform $anim-time $animation-timing-function,
     opacity $anim-time $animation-timing-function;
+
+    @media screen and (min-width: 360px){
+        padding: 50px 24px;
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 360px){
+        padding: 50px 24px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 450px){
+        padding: 77px 24px;
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 49px 24px;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding: 63px 24px;
+    }
+
 }
 
 .card-set__overlay-text{
     color: $white-color;
-    font-size: 18px;
     line-height: 1.56;
 }
 
