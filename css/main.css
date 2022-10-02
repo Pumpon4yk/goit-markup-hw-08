@@ -89,20 +89,15 @@ button {
 
 .titel {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.18;
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
-  .titel {
-    font-size: 28px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .titel {
     font-size: 36px;
-    line-height: 1.13;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
 }
@@ -451,13 +446,17 @@ button {
 .header .container {
   position: relative;
   max-width: 480px;
-  padding: 10px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header .container {
+    padding: 10px 15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header .container {
@@ -514,6 +513,9 @@ button {
 .nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
+.nav__link--curent {
+  color: #2196f3;
+}
 @media screen and (min-width: 768px) {
   .nav__link {
     padding: 32px 0;
@@ -522,7 +524,6 @@ button {
   }
   .nav__link--curent {
     position: relative;
-    color: #2196f3;
   }
   .nav__link--curent::after {
     display: block;
@@ -616,6 +617,12 @@ button {
         -ms-flex-align: center;
             align-items: center;
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 

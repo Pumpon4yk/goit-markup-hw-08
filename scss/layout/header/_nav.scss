@@ -37,6 +37,10 @@
         color: $blue-color;
     }
 
+    &--curent{
+        color: $blue-color;
+    }
+
     @media screen and (min-width: 768px) {
         padding: 32px 0;
         font-size:  14px;
@@ -44,7 +48,6 @@
 
         &--curent{
         position: relative;
-        color: $blue-color;
             &::after{
                 display: block;
                 position: absolute;
