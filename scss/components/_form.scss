@@ -152,10 +152,15 @@
 
 .form__policy-text{
     font-size: 12px;
-    line-height: 1.71;
+    line-height: 1.17;
     color: $grey-color;
 
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
 } 
 
 .form__policy-link{
